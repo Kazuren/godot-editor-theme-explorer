@@ -8,7 +8,7 @@ var _font_size_map : Dictionary = {}
 var _default_size_type_name : String = "EditorFonts"
 
 # Utils
-const _PluginUtils := preload("res://addons/explore-editor-theme/utils/PluginUtils.gd")
+var _PluginUtils := load("res://addons/explore-editor-theme/utils/PluginUtils.gd")
 
 # Node references
 @onready var layout_root : BoxContainer = $Layout
@@ -36,7 +36,7 @@ const _PluginUtils := preload("res://addons/explore-editor-theme/utils/PluginUti
 @onready var size_font_code : Control = $Layout/FontSizeView/FontSizePanel/FontSizeCode
 
 # Scene references
-var font_item_scene := preload("res://addons/explore-editor-theme/lists/FontListItem.tscn")
+var font_item_scene := load("res://addons/explore-editor-theme/lists/FontListItem.tscn")
 
 func _ready() -> void:
 	_update_theme()

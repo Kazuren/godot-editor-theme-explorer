@@ -8,7 +8,7 @@ func get_plugin_name() -> String:
 	return plugin_name
 
 func _enter_tree():
-	dialog_instance = preload("res://addons/explore-editor-theme/ExplorerDialog.tscn").instantiate()
+	dialog_instance = load("res://addons/explore-editor-theme/ExplorerDialog.tscn").instantiate()
 	dialog_instance.editor_plugin = self
 	EditorInterface.get_base_control().add_child(dialog_instance)
 

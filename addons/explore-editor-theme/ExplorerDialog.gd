@@ -9,7 +9,7 @@ var editor_theme : Theme:
 	set = set_editor_theme
 
 # Utils
-const _PluginUtils := preload("res://addons/explore-editor-theme/utils/PluginUtils.gd")
+var _PluginUtils := load("res://addons/explore-editor-theme/utils/PluginUtils.gd")
 
 # Node references
 @onready var background_panel : ColorRect = $Panel

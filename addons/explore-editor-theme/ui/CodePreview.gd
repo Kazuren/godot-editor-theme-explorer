@@ -2,7 +2,7 @@
 extends VBoxContainer
 
 # Utils
-const _PluginUtils := preload("res://addons/explore-editor-theme/utils/PluginUtils.gd")
+var _PluginUtils := load("res://addons/explore-editor-theme/utils/PluginUtils.gd")
 
 # Node references
 @onready var code_input : CodeEdit = $CodeText

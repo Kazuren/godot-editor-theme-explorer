@@ -15,6 +15,10 @@ run/main_scene="res://addons/explore-editor-theme/ExplorerDialog.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://addons/explore-editor-theme/plugin-icon.png"
 
+[dotnet]
+
+project/assembly_name="Plugin- Editor Theme Explorer"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/explore-editor-theme/plugin.cfg")

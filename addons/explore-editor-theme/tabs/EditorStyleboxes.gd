@@ -9,7 +9,7 @@ var _stylebox_map : Dictionary = {}
 var _default_type_name : String = "EditorStyles"
 
 # Utils
-const _PluginUtils := preload("res://addons/explore-editor-theme/utils/PluginUtils.gd")
+var _PluginUtils := load("res://addons/explore-editor-theme/utils/PluginUtils.gd")
 
 # Node references
 @onready var layout_root : BoxContainer = $Layout
@@ -26,7 +26,7 @@ const _PluginUtils := preload("res://addons/explore-editor-theme/utils/PluginUti
 @onready var stylebox_inspector : Control = $Layout/StyleboxView/StyleboxPanel/StyleboxInspector
 
 # Scene references
-var stylebox_item_scene := preload("res://addons/explore-editor-theme/lists/StyleboxListItem.tscn")
+var stylebox_item_scene := load("res://addons/explore-editor-theme/lists/StyleboxListItem.tscn")
 
 func _ready() -> void:
 	_update_theme()

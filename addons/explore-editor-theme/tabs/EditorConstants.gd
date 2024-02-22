@@ -6,7 +6,7 @@ var _constant_map : Dictionary = {}
 var _default_type_name : String = "Editor"
 
 # Utils
-const _PluginUtils := preload("res://addons/explore-editor-theme/utils/PluginUtils.gd")
+var _PluginUtils := load("res://addons/explore-editor-theme/utils/PluginUtils.gd")
 
 # Node references
 @onready var layout_root : BoxContainer = $Layout

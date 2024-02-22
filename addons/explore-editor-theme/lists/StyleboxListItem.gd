@@ -12,7 +12,7 @@ var selected : bool = false:
 	set = set_selected
 
 # Utils
-const _PluginUtils := preload("res://addons/explore-editor-theme/utils/PluginUtils.gd")
+var _PluginUtils := load("res://addons/explore-editor-theme/utils/PluginUtils.gd")
 
 # Node references
 @onready var stylebox_title : Label = $Layout/StyleboxName
